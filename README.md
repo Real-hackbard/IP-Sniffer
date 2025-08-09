@@ -1,1 +1,22 @@
-# IP-Sniffer
+# IP-Sniffer:
+
+```ruby
+Compiler    : Delph7 (or Higher)
+Components  : None
+Discription : Network Monotoring
+Last Update : 08/2025
+License     : Freeware
+```
+
+An IP sniffer is a type of monitoring tool that monitors and analyzes network traffic. It operates at a low level of the network stack, allowing it to intercept and examine data packets as they travel through a network. These tools are often referred to as "packet sniffer" or "network sniffer."
+
+An IP sniffer intercepts all or selected data packets passing through a network. Each packet contains various information, including the source and destination IP addresses, protocols, and possibly the data content.
+
+
+![IP Sniffer 1 0](https://github.com/user-attachments/assets/e40affdc-ac37-430e-97f3-51b0fad99845)
+
+
+
+After capturing the packets, the sniffer can analyze them to learn details about network activity, such as which devices are communicating with each other, what type of data is being transferred, and which IP addresses are involved.
+
+IT administrators use sniffers to diagnose network problems, such as identifying bottlenecks, misconfigurations, or unauthorized devices. Security professionals use sniffers to detect suspicious activity, such as potential intrusions or data exfiltration. Developers and researchers use sniffers to investigate the functionality of various network and internet protocols or to debug network applications.
