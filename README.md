@@ -157,6 +157,7 @@ repeat
         end;
 
         try
+          // Winsock Library
           sa1.s_addr := hdr.iph_src;
           SubItems.Add(inet_ntoa(sa1));
           sa1.s_addr := hdr.iph_dest;
