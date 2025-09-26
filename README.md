@@ -29,4 +29,15 @@ An IP sniffer intercepts all or selected data packets passing through a network.
 
 After capturing the packets, the sniffer can analyze them to learn details about network activity, such as which devices are communicating with each other, what type of data is being transferred, and which IP addresses are involved.
 
-IT administrators use sniffers to diagnose network problems, such as identifying bottlenecks, misconfigurations, or unauthorized devices. Security professionals use sniffers to detect suspicious activity, such as potential intrusions or data exfiltration. Developers and researchers use sniffers to investigate the functionality of various network and internet protocols or to debug network applications.
+IT administrators use sniffers to diagnose network problems, such as identifying bottlenecks, misconfigurations, or unauthorized devices. Security professionals use sniffers to detect suspicious activity, such as potential intrusions or data exfiltration. Developers and researchers use sniffers to investigate the functionality of various network and [internet protocols](https://en.wikipedia.org/wiki/Internet_protocol_suite) or to debug network applications.
+
+</br>
+
+### Protocols:
+
+| Protocol Number | Protocol                                 |
+| :-------------: | :--------------------------------------: |
+| 1               | [ICMP](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol) (Internet Control Message Protocol) |
+| 2               | [IGMP](https://en.wikipedia.org/wiki/Internet_Group_Management_Protocol) (Internet Group Management Protocol)   |
+
+
