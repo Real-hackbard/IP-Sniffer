@@ -35,11 +35,14 @@ IT administrators use sniffers to diagnose network problems, such as identifying
 
 ### Protocols:
 
-| Protocol Number | Protocol                                 |
+| [Protocol Number](https://de.wikipedia.org/wiki/Protokoll_(IP)) | Protocol                                 |
 | :-------------: | :--------------------------------------: |
 | 1               | [ICMP](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol) (Internet Control Message Protocol) |
 | 2               | [IGMP](https://en.wikipedia.org/wiki/Internet_Group_Management_Protocol) (Internet Group Management Protocol)   |
 | 3               | [GGP](https://en.wikipedia.org/wiki/Gateway-to-Gateway_Protocol) (Gateway-to-Gateway)   |
 | 4               | [IP](https://en.wikipedia.org/wiki/Internet_Protocol) (IP in IP (encapsulation))   |
+| 6               | [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) (Transmission Control Protocol)   |
+| 12              | [PUP](https://en.wikipedia.org/wiki/PARC_Universal_Packet) PARC Universal Packet (PUP)   |
+| 17              | [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) (User Datagram Protocol)   |
 
 
