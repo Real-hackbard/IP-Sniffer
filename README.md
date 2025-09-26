@@ -33,7 +33,7 @@ IT administrators use sniffers to diagnose network problems, such as identifying
 
 </br>
 
-### Protocols:
+### Sniffed Protocols:
 
 | [Protocol Number](https://de.wikipedia.org/wiki/Protokoll_(IP)) | Protocol                                 |
 | :-------------: | :--------------------------------------: |
@@ -48,4 +48,139 @@ IT administrators use sniffers to diagnose network problems, such as identifying
 | 77              | [NDP](https://en.wikipedia.org/wiki/Neighbor_Discovery_Protocol) SUN-ND (SUN ND PROTOCOL-Temporary)   |
 | 255             | RAW (Reserved)   |
 
+</br>
 
+### Add Protocols:
+To integrate additional protocols, the protocol numbers and the name of the protocol must be added in this part of the code.
+
+```pascal
+repeat
+     if Form1.Button1.Enabled = false then Exit;
+     count := recv(s, Buffer, sizeof(Buffer), 0);
+      if (count >= sizeof(TIPHeader)) then
+      with LV.Items.Add do
+      begin
+        hdr := @Buffer;
+        Caption:= TimeToStr(Time);
+
+        case hdr.iph_protocol of
+          IPPROTO_IP: begin
+                      a := a + 1;
+                      Form1.CheckBox1.Caption := 'IP (' + IntToStr(a) + ')';
+                      end;
+
+          IPPROTO_TCP:begin
+                      b := b + 1;
+                      Form1.CheckBox2.Caption := 'TCP (' + IntToStr(b) + ')';
+                      end;
+
+          IPPROTO_UDP:begin
+                      c := c + 1;
+                      Form1.CheckBox3.Caption := 'UDP (' + IntToStr(c) + ')';
+                      end;
+
+          IPPROTO_ICMP: begin
+                        d := d + 1;
+                        Form1.CheckBox4.Caption := 'ICMP (' + IntToStr(d) + ')';
+                        end;
+
+          IPPROTO_IGMP: begin
+                        e := e + 1;
+                        Form1.CheckBox4.Caption := 'IGMP (' + IntToStr(e) + ')';
+                        end;
+
+          IPPROTO_GGP: begin
+                        f := f + 1;
+                        Form1.CheckBox5.Caption := 'PUP (' + IntToStr(f) + ')';
+                        end;
+
+          IPPROTO_PUP: begin
+                        g := g + 1;
+                        Form1.CheckBox6.Caption := 'IDP (' + IntToStr(g) + ')';
+                        end;
+
+          IPPROTO_IDP: begin
+                        h := h + 1;
+                        Form1.CheckBox7.Caption := 'GGP (' + IntToStr(h) + ')';
+                        end;
+          IPPROTO_ND: begin
+                      j := j + 1;
+                      Form1.CheckBox8.Caption := 'NDP (' + IntToStr(j) + ')';
+                      end;
+          IPPROTO_RAW:  begin
+                        k := k + 1;
+                        Form1.CheckBox9.Caption := 'RAW (' + IntToStr(k) + ')';
+                        end;
+        //else
+          //SubItems.Add('Socket Error!')  // Intigrate when you want!
+        end;
+
+
+        if Form1.CheckBox1.Checked = true then begin
+          if hdr.iph_protocol = 4 then SubItems.Add('IP');
+        end;
+
+        if Form1.CheckBox2.Checked = true then begin
+          if hdr.iph_protocol = 6 then SubItems.Add('TCP');
+        end;
+
+        if Form1.CheckBox3.Checked = true then begin
+          if hdr.iph_protocol = 17 then SubItems.Add('UDP');
+        end;
+
+        if Form1.CheckBox4.Checked = true then begin
+          if hdr.iph_protocol = 1 then SubItems.Add('ICMP');
+        end;
+
+        if Form1.CheckBox5.Checked = true then begin
+          if hdr.iph_protocol = 2 then SubItems.Add('IGMP');
+        end;
+
+        if Form1.CheckBox6.Checked = true then begin
+          if hdr.iph_protocol = 12 then SubItems.Add('PUP');
+        end;
+
+        if Form1.CheckBox7.Checked = true then begin
+          if hdr.iph_protocol = 22 then SubItems.Add('IDP');
+        end;
+
+        if Form1.CheckBox8.Checked = true then begin
+          if hdr.iph_protocol = 3 then SubItems.Add('GGP');
+        end;
+
+        if Form1.CheckBox9.Checked = true then begin
+          if hdr.iph_protocol = 77 then SubItems.Add('NDP');
+        end;
+
+        if Form1.CheckBox10.Checked = true then begin
+          if hdr.iph_protocol = 255 then SubItems.Add('RAW');
+        end;
+
+        try
+          sa1.s_addr := hdr.iph_src;
+          SubItems.Add(inet_ntoa(sa1));
+          sa1.s_addr := hdr.iph_dest;
+          SubItems.Add(inet_ntoa(sa1));
+          lowbyte := hdr.iph_length shr 8;
+          hibyte := hdr.iph_length shl 8;
+          hibyte := hibyte + lowbyte;
+          SubItems.Add(IntToStr(hibyte));
+          SubItems.Add(IntToStr(hdr.iph_ttl));
+          SubItems.Add(IntToStr(hdr.iph_xsum));
+          SubItems.Add(IntToStr(hdr.iph_length));
+          SubItems.Add(IntToStr(hdr.iph_offset));
+          SubItems.Add(IntToStr(hdr.iph_tos));
+          SubItems.Add(IntToStr(hdr.iph_id));
+          SubItems.Add(IntToStr(hdr.iph_verlen));
+          SubItems.Add(IntToStr(sizeof(Buffer)));
+
+          if SubItems.Text = '' then begin
+          Form1.ListView1.Items.Delete(Form1.ListView1.ItemIndex)
+          end;
+        except
+        end;
+
+      Form1.StatusBar1.Panels[1].Text := IntToStr(Form1.ListView1.Items.Count);
+      end;
+  until false;
+```
