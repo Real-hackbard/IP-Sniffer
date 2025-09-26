@@ -44,5 +44,8 @@ IT administrators use sniffers to diagnose network problems, such as identifying
 | 6               | [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) (Transmission Control Protocol)   |
 | 12              | [PUP](https://en.wikipedia.org/wiki/PARC_Universal_Packet) PARC Universal Packet (PUP)   |
 | 17              | [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) (User Datagram Protocol)   |
+| 22              | [IDP](https://en.wikipedia.org/wiki/Identity_provider) XNS-IDP (XEROX NS IDP)   |
+| 77              | [NDP](https://en.wikipedia.org/wiki/Neighbor_Discovery_Protocol) SUN-ND (SUN ND PROTOCOL-Temporary)   |
+| 255             | RAW (Reserved)   |
 
 
