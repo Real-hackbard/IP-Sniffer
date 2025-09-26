@@ -39,5 +39,7 @@ IT administrators use sniffers to diagnose network problems, such as identifying
 | :-------------: | :--------------------------------------: |
 | 1               | [ICMP](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol) (Internet Control Message Protocol) |
 | 2               | [IGMP](https://en.wikipedia.org/wiki/Internet_Group_Management_Protocol) (Internet Group Management Protocol)   |
+| 3               | [GGP](https://en.wikipedia.org/wiki/Gateway-to-Gateway_Protocol) (Gateway-to-Gateway)   |
+| 4               | [IP](https://en.wikipedia.org/wiki/Internet_Protocol) (IP in IP (encapsulation))   |
 
 
