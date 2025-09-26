@@ -18,7 +18,7 @@ An IP sniffer intercepts all or selected data packets passing through a network.
 
 ### Update:
 * New VCL Library
-* get Hosts Domains
+* Sniff Hosts Domains
 
 </br>
 
