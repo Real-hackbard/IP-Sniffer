@@ -44,7 +44,7 @@ IT administrators use sniffers to diagnose network problems, such as identifying
 
 </br>
 
-### Sniffed Protocols:
+# :wrench: Sniffed Protocols:
 
 | [Protocol Number](https://de.wikipedia.org/wiki/Protokoll_(IP)) | Protocol                                 |
 | :-------------: | :--------------------------------------: |
@@ -61,7 +61,7 @@ IT administrators use sniffers to diagnose network problems, such as identifying
 
 </br>
 
-### Add Protocols:
+# :speech_balloon: Add Protocols:
 To integrate additional protocols, the protocol numbers and the name of the protocol must be added in this part of the code.
 
 ```pascal
