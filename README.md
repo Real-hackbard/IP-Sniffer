@@ -211,3 +211,14 @@ repeat
 The general term internet geolocation refers to the process of localizing a device connected to the internet. For example, the device's [IP address](https://en.wikipedia.org/wiki/IP_address) can be used to determine the country, city, or [ZIP code](https://en.wikipedia.org/wiki/ZIP_Code), determining its geographical location. Other methods include examination of Wi-Fi hotspots and other radio signals.
 
 Internet geolocation has several applications, including [law enforcement](https://en.wikipedia.org/wiki/Law_enforcement), [marketing](https://en.wikipedia.org/wiki/Online_advertising), [online regulation](https://en.wikipedia.org/wiki/Information_technology_law#Regulation) compliance, and delivery of specific services based on the user's location.
+
+### How geolocation works
+Geolocation works by collecting, processing, and transmitting data. [Geolocation databases](https://whatismyipaddress.com/geolocation-providers) are utilized by ridesharing services, streaming platforms, e-commerce sites, and more.  A device dedicated to geotracking collects data from cellular tower and WiFi pings, GPS signals, and other services. 
+
+The device then transmits collected data to the cloud or to a central, dedicated server.
+
+The collected data is then analyzed and processed to triangulate a location by measuring the distance between your device and the signal or ping.  
+
+For example, say you’re looking for a Sushi restaurant near you via your phone’s internet browser. The results that appear might include restaurants within a mile of your current location. 
+
+This is possible because your cell phone transmits a signal to a local cellular tower, and collected data determining your phone’s location is then processed and analyzed within seconds.
