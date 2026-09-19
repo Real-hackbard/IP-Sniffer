@@ -22,7 +22,7 @@ An IP sniffer intercepts all or selected data packets passing through a network.
 * Ping ip
 * Whois (Can cause problems)
 * Determine individual hosts
-* Geolocation (complete)
+* [Geolocation](https://en.wikipedia.org/wiki/Internet_geolocation) (complete)
   * Country
   * City
   * Region
