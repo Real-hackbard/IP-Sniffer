@@ -168,23 +168,31 @@ repeat
         end;
 
         try
-          // Winsock Library
+          // Sender's IP address
           sa1.s_addr := hdr.iph_src;
+          // converts an IPv4 address (network byte order / in_addr structure) into a readable, dotted string
           SubItems.Add(inet_ntoa(sa1));
+          // Destination IP address
           sa1.s_addr := hdr.iph_dest;
+          // convert binary network byte order into a readable string in dotted-decimal format
           SubItems.Add(inet_ntoa(sa1));
+          // Bitwise right shift by 8 bits
           lowbyte := hdr.iph_length shr 8;
+          // To shift the value of the iph_length field 8 bits to the left
           hibyte := hdr.iph_length shl 8;
+          // put it together
           hibyte := hibyte + lowbyte;
-          SubItems.Add(IntToStr(hibyte));
-          SubItems.Add(IntToStr(hdr.iph_ttl));
-          SubItems.Add(IntToStr(hdr.iph_xsum));
-          SubItems.Add(IntToStr(hdr.iph_length));
-          SubItems.Add(IntToStr(hdr.iph_offset));
-          SubItems.Add(IntToStr(hdr.iph_tos));
-          SubItems.Add(IntToStr(hdr.iph_id));
-          SubItems.Add(IntToStr(hdr.iph_verlen));
-          SubItems.Add(IntToStr(sizeof(Buffer)));
+
+          // complete output of the information
+          SubItems.Add(IntToStr(hibyte));           // Port
+          SubItems.Add(IntToStr(hdr.iph_ttl));      // TimeToLive
+          SubItems.Add(IntToStr(hdr.iph_xsum));     // Header checksum field
+          SubItems.Add(IntToStr(hdr.iph_length));   // Length of an IP header
+          SubItems.Add(IntToStr(hdr.iph_offset));   // Fragment offset in IPv4 header
+          SubItems.Add(IntToStr(hdr.iph_tos));      // (Type of Service) within an IP header
+          SubItems.Add(IntToStr(hdr.iph_id));       // Identification field (ID) within an IPv4 header structure object
+          SubItems.Add(IntToStr(hdr.iph_verlen));   // first data field (1 byte) within an IPv4 header structure
+          SubItems.Add(IntToStr(sizeof(Buffer)));   // Buffer data size
 
           if SubItems.Text = '' then begin
           Form1.ListView1.Items.Delete(Form1.ListView1.ItemIndex)
