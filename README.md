@@ -20,7 +20,7 @@ An IP sniffer intercepts all or selected data packets passing through a network.
 ### Features:
 * Scan domains
 * Ping ip
-* Whois (Can cause problems)
+* [Whois](https://en.wikipedia.org/wiki/WHOIS) (Can cause problems)
 * Determine individual hosts
 * [Geolocation](https://en.wikipedia.org/wiki/Internet_geolocation) (complete)
   * Country
