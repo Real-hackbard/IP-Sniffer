@@ -17,14 +17,9 @@ An IP sniffer intercepts all or selected data packets passing through a network.
 
 </br>
 
-### Update:
-* New VCL Library
-* Sniff Hosts Domains
-
-</br>
-
 <img src="https://github.com/user-attachments/assets/a2a866bb-5d64-469a-86ec-655cac80e187" />
 
+</br>
 </br>
 
 After capturing the packets, the sniffer can analyze them to learn details about network activity, such as which devices are communicating with each other, what type of data is being transferred, and which IP addresses are involved.
