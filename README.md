@@ -17,7 +17,7 @@ An IP sniffer intercepts all or selected data packets passing through a network.
 
 <br>
 
-### Features:
+### :wrench: Features:
 * Scan domains
 * Ping ip
 * [Whois](https://en.wikipedia.org/wiki/WHOIS) (Can cause problems)
