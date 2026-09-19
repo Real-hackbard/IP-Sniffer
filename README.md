@@ -204,3 +204,10 @@ repeat
       end;
   until false;
 ```
+
+<br>
+
+# :speech_balloon: Internet geolocation
+The general term internet geolocation refers to the process of localizing a device connected to the internet. For example, the device's [IP address](https://en.wikipedia.org/wiki/IP_address) can be used to determine the country, city, or [ZIP code](https://en.wikipedia.org/wiki/ZIP_Code), determining its geographical location. Other methods include examination of Wi-Fi hotspots and other radio signals.
+
+Internet geolocation has several applications, including [law enforcement](https://en.wikipedia.org/wiki/Law_enforcement), [marketing](https://en.wikipedia.org/wiki/Online_advertising), [online regulation](https://en.wikipedia.org/wiki/Information_technology_law#Regulation) compliance, and delivery of specific services based on the user's location.
