@@ -23,8 +23,7 @@ An IP sniffer intercepts all or selected data packets passing through a network.
 
 </br>
 
-![IP Sniffer](https://github.com/user-attachments/assets/9f234bbc-8659-48cb-85a0-1a3fa077d4b1)
-
+<img src="https://github.com/user-attachments/assets/a2a866bb-5d64-469a-86ec-655cac80e187" />
 
 </br>
 
