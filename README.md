@@ -212,7 +212,7 @@ The general term internet geolocation refers to the process of localizing a devi
 
 Internet geolocation has several applications, including [law enforcement](https://en.wikipedia.org/wiki/Law_enforcement), [marketing](https://en.wikipedia.org/wiki/Online_advertising), [online regulation](https://en.wikipedia.org/wiki/Information_technology_law#Regulation) compliance, and delivery of specific services based on the user's location.
 
-### How geolocation works
+# :speech_balloon: How geolocation works
 Geolocation works by collecting, processing, and transmitting data. [Geolocation databases](https://whatismyipaddress.com/geolocation-providers) are utilized by ridesharing services, streaming platforms, e-commerce sites, and more.  A device dedicated to geotracking collects data from cellular tower and WiFi pings, GPS signals, and other services. 
 
 The device then transmits collected data to the cloud or to a central, dedicated server.
