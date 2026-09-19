@@ -15,6 +15,22 @@ An IP sniffer is a type of monitoring tool that monitors and analyzes network tr
 
 An IP sniffer intercepts all or selected data packets passing through a network. Each packet contains various information, including the source and destination IP addresses, protocols, and possibly the data content.
 
+<br>
+
+### Features:
+* Scan domains
+* Ping ip
+* Whois (Can cause problems)
+* Determine individual hosts
+* Geolocation (complete)
+  * Country
+  * City
+  * Region
+  * Coordinates (Latidude)
+  * Owner (Company)
+  * Postal number
+  * own location
+
 </br>
 
 <img src="https://github.com/user-attachments/assets/a2a866bb-5d64-469a-86ec-655cac80e187" />
