@@ -222,3 +222,7 @@ The collected data is then analyzed and processed to triangulate a location by m
 For example, say you’re looking for a Sushi restaurant near you via your phone’s internet browser. The results that appear might include restaurants within a mile of your current location. 
 
 This is possible because your cell phone transmits a signal to a local cellular tower, and collected data determining your phone’s location is then processed and analyzed within seconds.
+
+<br>
+
+<img src="https://github.com/user-attachments/assets/70a2ea27-294d-432a-865b-16f32ef197df" />
